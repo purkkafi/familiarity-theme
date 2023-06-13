@@ -1,0 +1,14 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://it7ufdsdvb1b"]
+
+[ext_resource type="Texture2D" uid="uid://c4rqj8ncldlla" path="res://assets/themes/familiarity-theme/images/gradientbox.png" id="1_46nqp"]
+
+[resource]
+texture = ExtResource("1_46nqp")
+texture_margin_left = 200.0
+texture_margin_top = 10.0
+texture_margin_right = 200.0
+texture_margin_bottom = 10.0
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0

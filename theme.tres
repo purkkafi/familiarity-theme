@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=17 format=3 uid="uid://dyfynvhe3u7me"]
+[gd_resource type="Theme" load_steps=29 format=3 uid="uid://dyfynvhe3u7me"]
 
 [ext_resource type="StyleBox" uid="uid://c66cciwl4xnw2" path="res://assets/themes/familiarity-theme/styleboxes/gradientbox_advpanel.tres" id="1_5i4rl"]
 [ext_resource type="FontFile" uid="uid://le0fclylvud5" path="res://assets/themes/familiarity-theme/fonts/DejaVuSans.ttf" id="1_35gbs"]
@@ -8,22 +8,43 @@
 [ext_resource type="StyleBox" uid="uid://bk4qsmlxsgppe" path="res://assets/themes/familiarity-theme/styleboxes/hslider.tres" id="3_2uroj"]
 [ext_resource type="Texture2D" uid="uid://msy2e28tx8lr" path="res://assets/themes/familiarity-theme/images/hgrabber.png" id="3_hi40w"]
 [ext_resource type="Texture2D" uid="uid://dmyqirrsuuq1b" path="res://assets/themes/familiarity-theme/images/hgrabber_highlight.png" id="4_ro7gx"]
+[ext_resource type="Texture2D" uid="uid://xod4c656yt10" path="res://assets/themes/familiarity-theme/images/checkbutton_on.png" id="6_ygdnh"]
 [ext_resource type="Texture2D" uid="uid://cvf0hfh00io47" path="res://assets/themes/familiarity-theme/images/arrow_down.png" id="7_1tw2d"]
+[ext_resource type="Texture2D" uid="uid://befvn5g20coel" path="res://assets/themes/familiarity-theme/images/checkbutton_off.png" id="7_bp0mh"]
 [ext_resource type="StyleBox" uid="uid://bj5irmidp8rho" path="res://assets/themes/familiarity-theme/styleboxes/vscrollbar.tres" id="7_logij"]
 [ext_resource type="StyleBox" uid="uid://dqdvvxphiol3c" path="res://assets/themes/familiarity-theme/styleboxes/vscrollbar_grabber.tres" id="7_lpura"]
 [ext_resource type="StyleBox" uid="uid://bf2oj7kjx6ccc" path="res://assets/themes/familiarity-theme/styleboxes/panel.tres" id="7_sf6i2"]
+[ext_resource type="StyleBox" uid="uid://it7ufdsdvb1b" path="res://assets/themes/familiarity-theme/styleboxes/gradientbox_choicebutton.tres" id="7_tiaie"]
 [ext_resource type="Texture2D" uid="uid://q07xaubydndh" path="res://assets/themes/familiarity-theme/images/selected.png" id="8_8emll"]
 [ext_resource type="StyleBox" uid="uid://b2qachgw6gal1" path="res://assets/themes/familiarity-theme/styleboxes/vscrollbar_grabber_highlight.tres" id="8_fja0h"]
 [ext_resource type="StyleBox" uid="uid://b1deg2ohta757" path="res://assets/themes/familiarity-theme/styleboxes/vscrollbar_focus.tres" id="8_rip8c"]
 [ext_resource type="Texture2D" uid="uid://boal5p0v404gp" path="res://assets/themes/familiarity-theme/images/unselected.png" id="9_micnx"]
+[ext_resource type="FontFile" uid="uid://ddshnevihdmx5" path="res://assets/themes/familiarity-theme/fonts/DejaVuSans-Bold.ttf" id="13_kntxk"]
+[ext_resource type="FontFile" uid="uid://dune1h448a6j7" path="res://assets/themes/familiarity-theme/fonts/DejaVuSans-BoldOblique.ttf" id="14_w11kw"]
+[ext_resource type="FontFile" uid="uid://cttwetopork7s" path="res://assets/themes/familiarity-theme/fonts/DejaVuSans-Oblique.ttf" id="15_2popl"]
+[ext_resource type="StyleBox" uid="uid://d00qor01hndio" path="res://assets/themes/familiarity-theme/styleboxes/save_focus.tres" id="19_4iml3"]
+[ext_resource type="StyleBox" uid="uid://6hvgjx2f7265" path="res://assets/themes/familiarity-theme/styleboxes/save_hover.tres" id="19_mdm68"]
+[ext_resource type="StyleBox" uid="uid://djwv7rd4ua41q" path="res://assets/themes/familiarity-theme/styleboxes/tab.tres" id="19_q42d8"]
+[ext_resource type="StyleBox" uid="uid://sxrxmm83bmxx" path="res://assets/themes/familiarity-theme/styleboxes/panel_tooltip.tres" id="22_qh28b"]
+[ext_resource type="StyleBox" uid="uid://dng68f7r3uqxr" path="res://assets/themes/familiarity-theme/styleboxes/panel_window.tres" id="23_4gqvc"]
+[ext_resource type="Texture2D" uid="uid://c4mdla6fjt1d7" path="res://assets/themes/familiarity-theme/images/close_window.png" id="23_dk31s"]
 
 [resource]
 default_font = ExtResource("1_35gbs")
 default_font_size = 30
+ADVSpeaker/base_type = &"PanelContainer"
+ADVSpeaker/constants/speaker_offset_x = 150
+ADVSpeaker/constants/speaker_offset_y = 10
+ADVSpeaker/styles/panel = ExtResource("1_f3aau")
+ADVSpeakerLabel/base_type = &"Label"
+ADVSpeakerLabel/font_sizes/font_size = 35
 ADVView/base_type = &"PanelContainer"
 ADVView/constants/height = 200
-ADVView/constants/width = 1400
+ADVView/constants/width = 1500
 ADVView/styles/panel = ExtResource("1_5i4rl")
+ADVViewWithSpeaker/base_type = &"PanelContainer"
+ADVViewWithSpeaker/styles/panel = ExtResource("1_5i4rl")
+AcceptDialog/styles/panel = ExtResource("1_f3aau")
 BoxContainer/constants/separation = 20
 Button/colors/font_color = Color(0.533333, 0.533333, 0.533333, 1)
 Button/colors/font_focus_color = Color(1, 1, 1, 1)
@@ -40,11 +61,20 @@ CheckBox/icons/unchecked = ExtResource("9_micnx")
 CheckBox/styles/focus = ExtResource("1_f3aau")
 CheckBox/styles/hover = ExtResource("1_f3aau")
 CheckBox/styles/hover_pressed = ExtResource("1_f3aau")
+CheckButton/icons/checked = ExtResource("6_ygdnh")
+CheckButton/icons/unchecked = ExtResource("7_bp0mh")
+CheckButton/styles/hover = ExtResource("1_f3aau")
+CheckButton/styles/hover_pressed = ExtResource("1_f3aau")
+ChoiceButton/base_type = &"Button"
+ChoiceButton/colors/font_color = Color(1, 1, 1, 1)
+ChoiceButton/styles/hover = ExtResource("7_tiaie")
+ChoiceButton/styles/normal = ExtResource("7_tiaie")
+ChoiceButton/styles/pressed = ExtResource("7_tiaie")
 DangerButton/base_type = &"Button"
 DangerButton/colors/font_hover_color = Color(0.878431, 0.207843, 0.207843, 1)
 DangerButton/colors/font_hover_pressed_color = Color(0.878431, 0.207843, 0.207843, 1)
 Global/colors/background_color = Color(0, 0, 0, 1)
-Global/colors/shadow_color = Color(0, 0, 0, 0.501961)
+Global/colors/shadow_color = Color(0.0980392, 0.0980392, 0.0980392, 0.501961)
 GridContainer/constants/h_separation = 20
 GridContainer/constants/v_separation = 20
 HSeparator/constants/separation = 20
@@ -57,10 +87,17 @@ HSlider/styles/slider = ExtResource("3_2uroj")
 Header/base_type = &"Label"
 Header/colors/font_color = Color(0, 0.6, 0.8, 1)
 Header/font_sizes/font_size = 40
+LineEdit/colors/caret_color = Color(0, 0.6, 0.8, 1)
+LineEdit/constants/caret_width = 3
+LineEdit/styles/focus = ExtResource("1_f3aau")
+LineEdit/styles/normal = ExtResource("1_f3aau")
 MarginContainer/constants/margin_bottom = 20
 MarginContainer/constants/margin_left = 20
 MarginContainer/constants/margin_right = 20
 MarginContainer/constants/margin_top = 20
+NVLView/constants/bottom_margin = 60
+NVLView/constants/top_margin = 60
+NVLView/constants/width = 1000
 OptionButton/constants/h_separation = 20
 OptionButton/icons/arrow = ExtResource("7_1tw2d")
 OptionButton/styles/hover = ExtResource("1_f3aau")
@@ -76,11 +113,24 @@ PopupMenu/icons/radio_checked = ExtResource("8_8emll")
 PopupMenu/icons/radio_unchecked = ExtResource("9_micnx")
 PopupMenu/styles/hover = ExtResource("1_f3aau")
 PopupMenu/styles/panel = ExtResource("7_sf6i2")
+RichTextLabel/fonts/bold_font = ExtResource("13_kntxk")
+RichTextLabel/fonts/bold_italics_font = ExtResource("14_w11kw")
+RichTextLabel/fonts/italics_font = ExtResource("15_2popl")
+RichTextLabel/fonts/normal_font = ExtResource("1_35gbs")
+SaveBox/styles/focus = ExtResource("19_4iml3")
+SaveBox/styles/hover = ExtResource("19_mdm68")
+SaveLabel/base_type = &"Label"
+SaveLabel/font_sizes/font_size = 20
 Subheader/base_type = &"Label"
 Subheader/colors/font_color = Color(0, 0.6, 0.8, 1)
 Subheader/font_sizes/font_size = 35
-TooltipPanel/styles/panel = ExtResource("7_sf6i2")
+TabContainer/styles/panel = ExtResource("1_f3aau")
+TabContainer/styles/tab_selected = ExtResource("19_q42d8")
+TabContainer/styles/tab_unselected = ExtResource("19_q42d8")
+TabContainer/styles/tabbar_background = ExtResource("1_f3aau")
+TooltipPanel/styles/panel = ExtResource("22_qh28b")
 VNControlsButton/base_type = &"Button"
+VNControlsButton/colors/font_disabled_color = Color(0.533333, 0.533333, 0.533333, 0.501961)
 VNControlsButton/font_sizes/font_size = 20
 VNControlsButton/styles/disabled = ExtResource("1_f3aau")
 VNControlsButton/styles/focus = ExtResource("1_f3aau")
@@ -88,6 +138,7 @@ VNControlsButton/styles/hover = ExtResource("1_f3aau")
 VNControlsButton/styles/normal = ExtResource("1_f3aau")
 VNControlsButton/styles/pressed = ExtResource("1_f3aau")
 VNControlsPanel/base_type = &"PanelContainer"
+VNControlsPanel/constants/bottom_offset = 5
 VNControlsPanel/constants/height = 25
 VNControlsPanel/constants/width = 1000
 VNControlsPanel/styles/panel = ExtResource("1_f3aau")
@@ -97,3 +148,9 @@ VScrollBar/styles/grabber_pressed = ExtResource("8_fja0h")
 VScrollBar/styles/scroll = ExtResource("7_logij")
 VScrollBar/styles/scroll_focus = ExtResource("8_rip8c")
 VSeparator/constants/separation = 20
+Window/constants/close_h_offset = 30
+Window/constants/close_v_offset = 40
+Window/constants/title_height = 50
+Window/icons/close = ExtResource("23_dk31s")
+Window/icons/close_pressed = ExtResource("23_dk31s")
+Window/styles/embedded_border = ExtResource("23_4gqvc")

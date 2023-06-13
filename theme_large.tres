@@ -1,0 +1,21 @@
+[gd_resource type="Theme" format=3 uid="uid://bi4miwxcttx47"]
+
+[resource]
+default_font_size = 40
+ADVSpeakerLabel/base_type = &"Label"
+ADVSpeakerLabel/font_sizes/font_size = 45
+ADVView/base_type = &"PanelContainer"
+ADVView/constants/height = 275
+ADVView/constants/width = 1700
+Header/base_type = &"Label"
+Header/font_sizes/font_size = 50
+NVLView/constants/width = 1200
+SaveLabel/base_type = &"Label"
+SaveLabel/font_sizes/font_size = 30
+Subheader/base_type = &"Label"
+Subheader/font_sizes/font_size = 45
+VNControlsButton/base_type = &"Label"
+VNControlsButton/font_sizes/font_size = 30
+VNControlsPanel/base_type = &"PanelContainer"
+VNControlsPanel/constants/height = 40
+VNControlsPanel/constants/width = 1200
